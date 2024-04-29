@@ -89,4 +89,15 @@ td {
     button {
         display: none;
     }
+
+    .account-details-wrapper {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    .statement {
+        margin-top: 10em; /* Adjust as needed */
+    }
+    
 }
