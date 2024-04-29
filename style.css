@@ -1,9 +1,18 @@
 .statement-account-details {
-    margin-top: 10em;
-    margin-inline: 3em;
-    /* border: 1px solid; */
-    padding-block: 1em;
-    padding-inline: 4em;
+    /* margin-top: 10em; */
+    margin-inline: 2em;
+}
+
+.account-details-wrapper{
+    position: fixed;
+    /* left: 2em; */
+    top: 8em;
+    /* right:7.952em; */
+    left: 5em;
+    width: 80%;
+    margin-inline: auto;
+    margin-block: 2em;
+    z-index: 99;
 }
 
 .account-details {
@@ -18,14 +27,14 @@
 }
 
 .deposit-plan {
-    margin-block: 1em;
+    margin-block: 0.5em;
     text-align: center;
 }
 
 .statement {
     width: 80%;
     margin: auto;
-    margin-top: 4em;
+    margin-top: 18em;
 }
 
 table {
@@ -46,18 +55,23 @@ td {
     padding-inline: 1em;
 }
 
+@page{
+    margin-top: 4em;
+}
 
 /* Styles for printing */
 @media print {
     body {
         -webkit-print-color-adjust: exact; /* For Chrome and Safari */
         color-adjust: exact; /* For Firefox */
+        margin:0;
+        padding: 0;
     }
-   
+
 
     table {
         border-collapse: collapse;  
-        margin: 0 auto;
+        /* margin: 0 auto; */
     }
 
     td,
@@ -65,6 +79,7 @@ td {
         border: 2px solid black;
         padding-block: 0.5em;
         padding-inline: 1em;
+        font-size: 0.9em;
     }
 
     th {
